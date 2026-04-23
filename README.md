@@ -29,6 +29,3 @@ AI powered social media growth tool for creators, brands and influencers.
 pip install -r requirements.txt
 python app.py
 
-## Live Demo
-
-[View Live Project](https://trendboost-ai.onrender.com)
