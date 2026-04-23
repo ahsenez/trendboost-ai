@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrendBoost AI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">GitHub Projesi • Demo</span>
+        <h1>TrendBoost AI</h1>
+        <p>
+          İçerik fikirleri, viral açıklamalar, hashtag önerileri, paylaşım saatleri ve haftalık plan üreten
+          sosyal medya büyüme paneli.
+        </p>
+      </div>
+      <div class="hero-card">
+        <div class="stat"><strong>6</strong><span>İçerik fikri</span></div>
+        <div class="stat"><strong>3</strong><span>Caption</span></div>
+        <div class="stat"><strong>12</strong><span>Hashtag</span></div>
+        <div class="stat"><strong>5 gün</strong><span>İçerik planı</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="card">
+      <h2>İçerik Üretici</h2>
+      <div class="form-grid">
+        <label>
+          Konu / niş
+          <input id="topic" type="text" placeholder="Örn: moda, cilt bakımı, fitness" value="moda" />
+        </label>
+        <label>
+          Platform
+          <select id="platform">
+            <option value="instagram">Instagram</option>
+            <option value="tiktok">TikTok</option>
+            <option value="linkedin">LinkedIn</option>
+          </select>
+        </label>
+        <label>
+          Ton
+          <select id="tone">
+            <option value="samimi">Samimi</option>
+            <option value="profesyonel">Profesyonel</option>
+            <option value="iddialı">İddialı</option>
+            <option value="eğitici">Eğitici</option>
+          </select>
+        </label>
+      </div>
+      <button id="generateBtn">Üret</button>
+    </section>
+
+    <section class="card">
+      <h2>Rakip / Profil Audit</h2>
+      <div class="form-grid audit-grid">
+        <label>
+          Kullanıcı adı
+          <input id="username" type="text" placeholder="@ornekhesap" value="@trendhesap" />
+        </label>
+        <label>
+          Niş
+          <input id="niche" type="text" placeholder="Örn: kombin önerileri" value="kombin önerileri" />
+        </label>
+      </div>
+      <button id="auditBtn" class="secondary">Audit Oluştur</button>
+    </section>
+
+    <section class="card span-2">
+      <h2>Sonuçlar</h2>
+      <div id="results" class="results-grid">
+        <div class="placeholder">Soldaki formu doldurup içerik üretmeye başla.</div>
+      </div>
+    </section>
+
+    <section class="card span-2">
+      <h2>Proje Özeti</h2>
+      <ul class="feature-list">
+        <li>Flask tabanlı API</li>
+        <li>Responsive arayüz</li>
+        <li>İçerik fikri + caption + hashtag üretimi</li>
+        <li>Haftalık paylaşım takvimi</li>
+        <li>Profil audit ekranı</li>
+        <li>GitHub için hazır README ve temiz proje yapısı</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© {{ year }} TrendBoost AI</div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
