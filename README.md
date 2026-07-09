@@ -16,7 +16,8 @@ AI powered social media growth tool for creators, brands and influencers.
 - Python  
 - Flask  
 - HTML  
-- CSS  
+- CSS
+- JavaScript  
 
 ## Preview
 
