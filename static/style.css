@@ -150,5 +150,5 @@ button.secondary { background: var(--accent-2); }
   .hero-grid, .main-grid, .results-grid, .audit-grid {
     grid-template-columns: 1fr;
   }
-  h1 { font-size: 36px; }
+
 }
