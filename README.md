@@ -13,7 +13,7 @@ AI powered social media growth tool for creators, brands and influencers.
 
 ## Tech Stack
 
-- Python  
+ 
 - Flask  
 - HTML  
 - CSS
